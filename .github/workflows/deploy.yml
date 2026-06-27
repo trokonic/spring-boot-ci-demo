@@ -14,10 +14,10 @@ jobs:
       uses: actions/checkout@v4
       
     - name: Setup Java
-      uses: actions/setup-java@v5
+      uses: actions/setup-java@v4
       with: 
         distribution: 'temurin'
-        java-verison: '.java-version'
+        java-version-file: '.java-version'
 
     - name: Build Java
       run: |
